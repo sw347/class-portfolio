@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fix-profile {
+    transition: 1s;
+    width: 50%;
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    top: 0;
+
+    >img {
+        position: inherit;
+        width: 50%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 1s;
+    }
+}
+
+.active {
+    opacity: 1;
+}
+
+.inactive {
+    opacity: 0;
+    background: transparent;
+}
+
+.my-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    >.introduce {
+        width: 72%;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+        > :nth-child(1) {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        > :nth-child(2) {
+            font-size: 1.6rem;
+        }
+
+        > :nth-child(3) {
+            font-size: 1.2rem;
+        }
+
+        >a {
+            color: black;
+            width: fit-content;
+            padding: 6px 16px;
+            border-radius: 16px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+
+        >a:hover {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    >.my-stack {
+        width: 72%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        >.license {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: -120px;
+
+            >span {
+                margin-bottom: 16px;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            >ol {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                >li {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .competition {
+        width: 72%;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        >.career {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            >span {
+                margin-bottom: 16px;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            >ol {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                >li {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .education {
+        width: 72%;
+        height: 85vh;
+        display: flex;
+        align-items: center;
+
+        >.highschool {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: -120px;
+
+            >span {
+                margin-bottom: 16px;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            >p {
+                font-size: 1.2rem;
+            }
+
+            > :nth-child(2) {
+                font-weight: bold;
+            }
+
+            > :nth-child(3) {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .inquiry {
+        height: 100vh;
+        width: 72%;
+        display: flex;
+        align-items: center;
+
+        >.content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            > :nth-child(1) {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            > :nth-child(2) {
+                >span {
+                    font-weight: bold;
+                }
+            }
+
+            > :nth-child(3) {
+                >span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.topBtn {
+    position: fixed;
+    left: 50%;
+    transform: translate(-125%, -25%);
+    background-color: rgb(199, 199, 199);
+    width: 75px;
+    text-align: center;
+    line-height: 75px;
+    border-radius: 50%;
+    height: 75px;
+    bottom: 0;
+    color: white;
+    display: none;
+    user-select: none;
+    cursor: pointer;
+}
