@@ -1,6 +1,11 @@
 const allContainer = document.querySelectorAll(".my-info> div");
 const backgroundImages = document.querySelectorAll(".fix-profile > img");
 const topBtn = document.querySelector(".topBtn");
+
+const portfolioBtn = document.querySelector(".portfolioBtn");
+const portfolioClose = document.querySelector(".portfolioClose");
+const portfolio = document.querySelector(".portfolio");
+
 let idx;
 let pastEl;
 
@@ -42,4 +47,12 @@ topBtn.addEventListener("click", () => {
     top: 0,
     behavior: "smooth",
   });
+});
+
+portfolioBtn.addEventListener("click", () => {
+  portfolio.style.left = "50%";
+});
+
+portfolioClose.addEventListener("click", () => {
+  portfolio.style.left = "100%";
 });

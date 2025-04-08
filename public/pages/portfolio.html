@@ -4,23 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>이선우의 portfolio</title>
-    <link rel="stylesheet" href="./portfolio-style.css" />
+    <link rel="stylesheet" href="../styles/portfolio-style.css" />
   </head>
   <body>
     <div class="container">
       <div class="fix-profile">
-        <img class="active" src="asset/0.jpg" alt="" />
-        <img class="inactive" src="asset/1.jpg" alt="" />
-        <img class="inactive" src="asset/2.jpg" alt="" />
-        <img class="inactive" src="asset/3.jpg" alt="" />
-        <img class="inactive" src="asset/4.jpg" alt="" />
+        <img class="active" src="../../asset/0.jpg" alt="" />
+        <img class="inactive" src="../../asset/1.jpg" alt="" />
+        <img class="inactive" src="../../asset/2.jpg" alt="" />
+        <img class="inactive" src="../../asset/3.jpg" alt="" />
+        <img class="inactive" src="../../asset/4.jpg" alt="" />
       </div>
       <div class="my-info">
         <div class="introduce">
           <p>이선우</p>
-          <p>배고픈 개발자</p>
+          <p>키큰 개발자</p>
           <p>열심히 배울려는 자세를 갖춘 <br />backend 개발자입니다.</p>
           <a href="https://github.com/sw347">github</a>
+          <button class="portfolioBtn">portfolio</button>
         </div>
         <div class="my-stack">
           <div class="license">
@@ -61,7 +62,29 @@
         </div>
       </div>
     </div>
-    <div class="topBtn">위로 가기</div>
-    <script src="./portfolio-script.js"></script>
+    <div class="topBtn">TOP</div>
+    <div class="portfolio">
+      <h1>Portfolio</h1>
+      <img
+        class="portfolioClose"
+        src="https://cdn-icons-png.flaticon.com/512/61/61155.png"
+        alt=""
+      />
+      <div class="portfolioBox">
+        <a href="http://127.0.0.1:5500/public/pages/board.html">
+          <div class="portfolioItem">
+            <iframe
+              src="http://127.0.0.1:5500/public/pages/board.html"
+              width="320"
+              height="240"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+            커뮤니티
+          </div>
+        </a>
+      </div>
+    </div>
+    <script src="../scripts/portfolio-script.js"></script>
   </body>
 </html>

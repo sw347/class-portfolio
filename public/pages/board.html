@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게시판</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/board-style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <span>커뮤니티</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="board-container">
+        <div class="board-header">
+          <div class="board-title">
+            <div class="category-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <span>자유게시판</span>
+          </div>
+          <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              class="search-item"
+              type="text"
+              placeholder="게시글 제목 검색"
+            />
+          </div>
+        </div>
+
+        <div class="board-content"></div>
+
+        <div class="board-footer">
+          <div class="total-posts">
+            총 <span class="highlighted">0</span>개의 게시글
+          </div>
+          <button class="btn btn-primary">
+            <i class="fas fa-pen"></i>
+            글쓰기
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-background">
+      <div class="popup">
+        <p class="popup-title">글 작성</p>
+        <img
+          class="popup-drop"
+          src="https://cdn-icons-png.flaticon.com/512/60/60758.png"
+          alt="나가기"
+        />
+        <div class="popup-input">
+          <div class="input-title">
+            <label>제목</label>
+            <input class="title" type="text" />
+          </div>
+          <div class="input-content">
+            <label>내용</label>
+            <input class="content" type="text" />
+          </div>
+        </div>
+        <button type="submit" class="popup-btn">완료</button>
+      </div>
+    </div>
+
+    <button class="back-portfolio"></button>
+    <script src="../scripts/board-script.js"></script>
+  </body>
+</html>

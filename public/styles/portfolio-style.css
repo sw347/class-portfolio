@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    color: inherit
 }
 
 .fix-profile {
@@ -52,15 +53,20 @@ a {
         > :nth-child(1) {
             font-size: 5rem;
             margin-bottom: 20px;
+
+            animation: slideup 1.5s linear 1;
             font-weight: bold;
         }
 
         > :nth-child(2) {
             font-size: 1.6rem;
+            animation: slideup 1.5s linear 1;
         }
 
         > :nth-child(3) {
             font-size: 1.2rem;
+
+            animation: slideup 1.5s linear 1;
         }
 
         >a {
@@ -70,9 +76,34 @@ a {
             border-radius: 16px;
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
             transition: 0.3s;
+
+            animation: slideup 1.5s linear 1;
         }
 
         >a:hover {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+
+        >.portfolioBtn {
+            color: black;
+            width: fit-content;
+            padding: 6px 16px;
+            border-radius: 16px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            border: 0;
+            transition: 0.3s;
+            font-size: 16px;
+            background-color: white;
+
+
+            animation: slideup 1.5s linear 1;
+        }
+
+
+        >.portfolioBtn:hover {
+            cursor: pointer;
             background-color: black;
             color: white;
             font-weight: bold;
@@ -205,6 +236,28 @@ a {
     }
 }
 
+
+@keyframes slideup {
+    0% {
+        opacity: 0;
+        margin-left: 50px;
+    }
+
+    20% {
+        opacity: 0;
+        margin-left: 25px;
+    }
+
+    80% {
+        opacity: 1;
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
 .topBtn {
     position: fixed;
     left: 50%;
@@ -220,4 +273,61 @@ a {
     display: none;
     user-select: none;
     cursor: pointer;
+    text-decoration: overline;
+}
+
+.portfolio {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-left: 5px solid black;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transition: 1.5s;
+    user-select: none;
+
+    >h1 {
+        margin: 32px;
+    }
+
+    >img {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(-100%, 100%);
+    }
+
+
+    >.portfolioBox {
+        margin: 32px;
+        width: 320px;
+        height: 240px;
+        border-radius: 16px;
+
+        a {
+
+            >.portfolioItem {
+                text-align: center;
+
+
+                font-weight: bold;
+
+                >iframe {
+                    transform-origin: top left;
+                    border-radius: 16px;
+                    border: 3px solid black;
+                    pointer-events: none;
+                }
+
+            }
+        }
+
+
+    }
+
 }
