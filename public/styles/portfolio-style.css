@@ -281,7 +281,7 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(231, 231, 231);
     border-left: 2px solid #ccc;
     position: fixed;
     top: 0;

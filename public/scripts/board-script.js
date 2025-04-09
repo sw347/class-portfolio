@@ -82,10 +82,10 @@ popupSubmitBtn.addEventListener("click", () => {
 
   if (title === "" || content === "") return;
   fetch(`${host}/board`, {
-    method: "post",
-    headers: {
-      "Content-Type": "application/json",
-    },
+    method: "POST",
+    mode: "cors",
+    headers: { "Access-Control-Allow-Origin": "*" },
+    credentials: "omit",
     body: JSON.stringify({
       title,
       content,
