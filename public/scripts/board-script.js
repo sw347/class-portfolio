@@ -14,7 +14,8 @@ const highlighted = document.querySelector(".highlighted");
 
 const searchItem = document.querySelector(".search-item");
 
-const host = "https://board-server-vl1ncdtv5-lsws-projects-e9ef4d20.vercel.app";
+const host =
+  "https://board-server-7k9orvtzd-lsws-projects-e9ef4d20.vercel.app/board";
 
 const namedItem = (name) => {
   let named = document.createElement("div");
@@ -52,15 +53,12 @@ const createItem = (el) => {
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
-  await fetch(
-    `https://board-server-2dg9jtiyc-lsws-projects-e9ef4d20.vercel.app/board`,
-    {
-      method: "GET",
-      mode: "cors",
-      headers: { "Access-Control-Allow-Origin": "*" },
-      credentials: "omit",
-    }
-  )
+  await fetch(`${host}/board`, {
+    method: "GET",
+    mode: "cors",
+    headers: { "Access-Control-Allow-Origin": "*" },
+    credentials: "omit",
+  })
     .then((response) => response.json())
     .then((data) => {
       if (data != "") {
