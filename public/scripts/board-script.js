@@ -14,8 +14,7 @@ const highlighted = document.querySelector(".highlighted");
 
 const searchItem = document.querySelector(".search-item");
 
-const host =
-  "https://board-server-7k9orvtzd-lsws-projects-e9ef4d20.vercel.app/board";
+const host = "https://board-server-vl1ncdtv5-lsws-projects-e9ef4d20.vercel.app";
 
 const namedItem = (name) => {
   let named = document.createElement("div");
