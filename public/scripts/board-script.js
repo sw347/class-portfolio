@@ -36,7 +36,7 @@ const createItem = (el) => {
     const check = confirm("정말 삭제하시겠습니까?");
     if (check) {
       fetch(`${host}/board/${itemId.textContent}`, {
-        method: "delete",
+        method: "DELETE",
       });
     }
     location.reload(true);
