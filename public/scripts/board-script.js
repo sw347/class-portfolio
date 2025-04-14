@@ -91,9 +91,11 @@ popupSubmitBtn.addEventListener("click", async () => {
       title,
       content,
     }),
+  }).then((response) => {
+    if (response.ok) {
+      location.reload(true);
+    }
   });
-
-  location.reload(true);
 });
 
 let intervalId = null;
