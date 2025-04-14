@@ -93,9 +93,9 @@ popupSubmitBtn.addEventListener("click", async () => {
     }),
   }).then((response) => {
     if (response.ok) {
-      setTimeout(() => {
-        location.reload(true);
-      }, 1000);
+      // setTimeout(() => {
+      location.reload(true);
+      // }, 1000);
     }
   });
 });
