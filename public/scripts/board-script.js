@@ -35,7 +35,7 @@ const createItem = (el) => {
   itemDeleteBtn.addEventListener("click", () => {
     const check = confirm("정말 삭제하시겠습니까?");
     if (check) {
-      fetch(`${host}/board/${itemId.textContent}`, {
+      fetch(`${host}board/${itemId.textContent}`, {
         method: "delete",
       });
     }
@@ -52,7 +52,7 @@ const createItem = (el) => {
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
-  await fetch(`${host}/board`, {
+  await fetch(`${host}board`, {
     method: "GET",
     mode: "cors",
     headers: { "Access-Control-Allow-Origin": "*" },
@@ -81,7 +81,7 @@ popupSubmitBtn.addEventListener("click", () => {
   content = contentBox.value.trim();
 
   if (title === "" || content === "") return;
-  fetch(`${host}/board`, {
+  fetch(`${host}board`, {
     method: "POST",
     mode: "cors",
     headers: { "Access-Control-Allow-Origin": "*" },
