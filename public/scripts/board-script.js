@@ -37,9 +37,11 @@ const createItem = (el) => {
     if (check) {
       fetch(`${host}/board/${itemId.textContent}`, {
         method: "DELETE",
+        mode: "cors",
+        credentials: "omit",
       });
     }
-    location.reload(true);
+    // location.reload(true);
   });
 
   itemId.textContent = el.id;
