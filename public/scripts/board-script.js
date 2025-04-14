@@ -41,7 +41,7 @@ const createItem = (el) => {
         credentials: "omit",
       });
     }
-    // location.reload(true);
+    location.reload(true);
   });
 
   itemId.textContent = el.id;
