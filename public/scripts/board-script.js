@@ -39,9 +39,10 @@ const createItem = (el) => {
         method: "DELETE",
         mode: "cors",
         credentials: "omit",
+      }).then((response) => {
+        location.reload(true);
       });
     }
-    location.reload(true);
   });
 
   itemId.textContent = el.id;
