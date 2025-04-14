@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   await fetch(`${host}/board`, {
     method: "GET",
     mode: "cors",
-    headers: { "Access-Control-Allow-Origin": "*" },
+    // headers: { "Access-Control-Allow-Origin": "*" },
     credentials: "omit",
   })
     .then((response) => response.json())
@@ -76,15 +76,15 @@ popupOpenBtn.addEventListener("click", () => (popup.style.display = "flex"));
 
 popupCloseBtn.addEventListener("click", () => (popup.style.display = "none"));
 
-popupSubmitBtn.addEventListener("click", () => {
+popupSubmitBtn.addEventListener("click", async () => {
   title = titleBox.value.trim();
   content = contentBox.value.trim();
 
   if (title === "" || content === "") return;
-  fetch(`${host}/board`, {
+  await fetch(`${host}/board`, {
     method: "POST",
     mode: "cors",
-    headers: { "Access-Control-Allow-Origin": "*" },
+    // headers: { "Access-Control-Allow-Origin": "*" },
     credentials: "omit",
     body: JSON.stringify({
       title,
