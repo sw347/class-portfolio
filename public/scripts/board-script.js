@@ -93,7 +93,7 @@ popupSubmitBtn.addEventListener("click", async () => {
     }),
   }).then((response) => {
     if (response.ok) {
-      location.reload(true);
+      // location.reload(true);
     }
   });
 });
