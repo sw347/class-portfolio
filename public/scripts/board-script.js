@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   await fetch(`${host}/board`, {
     method: "GET",
     mode: "cors",
-    // headers: { "Access-Control-Allow-Origin": "*" },
     credentials: "omit",
   })
     .then((response) => response.json())
@@ -84,8 +83,10 @@ popupSubmitBtn.addEventListener("click", async () => {
   await fetch(`${host}/board`, {
     method: "POST",
     mode: "cors",
-    // headers: { "Access-Control-Allow-Origin": "*" },
     credentials: "omit",
+    headers: {
+      "Content-Type": "application/json",
+    },
     body: JSON.stringify({
       title,
       content,
