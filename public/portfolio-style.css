@@ -302,6 +302,8 @@ a {
 
 
     >.portfolioBox {
+        display: flex;
+        gap: 32px;
         margin: 32px;
         width: 320px;
         height: 240px;
