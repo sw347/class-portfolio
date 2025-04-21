@@ -49,8 +49,18 @@ topBtn.addEventListener("click", () => {
   });
 });
 
+let checkPortfolio = true;
+
 portfolioBtn.addEventListener("click", () => {
-  portfolio.style.left = "50%";
+  if (checkPortfolio) {
+    portfolio.style.left = "50%";
+    portfolioBtn.classList.add("activePortfolioBtn");
+  } else {
+    portfolio.style.left = "100%";
+    portfolioBtn.classList.remove("activePortfolioBtn");
+  }
+
+  checkPortfolio = !checkPortfolio;
 });
 
 portfolioClose.addEventListener("click", () => {

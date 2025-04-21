@@ -407,3 +407,16 @@ header {
     position: absolute;
     transform: translate(160px, -24px);
 }
+
+.back-portfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    margin: 16px;
+
+    img {
+        width: 50px;
+        object-fit: cover;
+    }
+}

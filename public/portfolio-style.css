@@ -96,8 +96,6 @@ a {
             transition: 0.3s;
             font-size: 16px;
             background-color: white;
-
-
             animation: slideup 1.5s linear 1;
         }
 
@@ -330,4 +328,11 @@ a {
 
     }
 
+}
+
+.activePortfolioBtn {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: bold;
 }
