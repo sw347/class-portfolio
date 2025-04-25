@@ -14,7 +14,7 @@ const highlighted = document.querySelector(".highlighted");
 
 const searchItem = document.querySelector(".search-item");
 
-const host = "http://222.110.147.50:5161";
+const host = "https://https://european-chem-studies-vitamins.trycloudflare.com";
 
 const namedItem = (name) => {
   let named = document.createElement("div");
