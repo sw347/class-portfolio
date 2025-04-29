@@ -14,7 +14,7 @@ const highlighted = document.querySelector(".highlighted");
 
 const searchItem = document.querySelector(".search-item");
 
-const host = "";
+const host = "http://localhost:5161";
 
 const namedItem = (name) => {
   let named = document.createElement("div");
