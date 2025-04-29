@@ -5,3 +5,5 @@
 ts.ts
 ts.js
 tsconfig.json
+
+/node_modules
