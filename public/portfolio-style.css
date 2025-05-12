@@ -338,3 +338,14 @@ a {
     color: white;
     font-weight: bold;
 }
+
+.into-calendar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 24px;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 8px 16px;
+    border-radius: 16px;
+}
