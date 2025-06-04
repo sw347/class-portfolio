@@ -83,3 +83,36 @@ body>a {
         margin: 40px;
     }
 }
+
+.next-month {
+    transform: rotate(180deg);
+}
+
+.marks {
+    position: absolute;
+    top: 16%;
+    left: 46%;
+    display: flex;
+    gap: 24px;
+
+    >div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.holidayMark {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.anniversaryMark {
+    width: 10px;
+    height: 10px;
+    background-color: violet;
+    border-radius: 50%;
+    margin-right: 8px;
+}
